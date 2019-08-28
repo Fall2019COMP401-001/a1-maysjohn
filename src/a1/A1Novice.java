@@ -12,7 +12,8 @@ public class A1Novice {
 		
 		int count = scan.nextInt(); // Number of people that buy groceries
 		
-		String name[] = new String[count]; // Input string from  store values
+		//String name[] = new String[count]; // Input string from  store values
+		 
 		
 		for (int m=0; m < count; m++) {  // For loop to run each customer order
 			
@@ -37,9 +38,7 @@ public class A1Novice {
 				total_price = total_price + (total_items * item_cost);	// Total price of order
 				
 			}
-			
 			System.out.println(firstName +". " + lastName + ": " + total_price); // Output
-			
 		   }
 		
 	
