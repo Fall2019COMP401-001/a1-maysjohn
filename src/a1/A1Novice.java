@@ -23,7 +23,7 @@ public class A1Novice {
 			
 			int Groceries = scan.nextInt(); // Find the number of groceries bought
 			
-			double total_price = 0; // Amount each customer spent
+			double total_price = 0.00; // Amount each customer spent
 			
 			String countGroceries[ ] = new String[Groceries]; //Input string from stored Groceries
 			
@@ -37,8 +37,9 @@ public class A1Novice {
 				
 				total_price = total_price + (total_items * item_cost);	// Total price of order
 				
+				
 			}
-			System.out.println(firstName +". " + lastName + ": " + total_price); // Output
+			System.out.println(firstName +". " + lastName + ": " + String.format("%.2f",total_price)); // Output
 		   }
 		
 	
