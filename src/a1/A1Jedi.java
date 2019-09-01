@@ -27,15 +27,13 @@ public class A1Jedi {
 			
 		} 
 		
-		//int customer = 0;
-		
 		int num_customer = scan.nextInt( ); // Finds number of customer, next Interger
 		
 		String[] first_name = new String[num_customer]; // Initializes array to store first name
 		
 		String [] last_name = new String[num_customer]; // Initializes array to store last name
 		
-		int [] num_customer_bought_item = new int[num_food]; 
+		int [] num_customer_bought_item = new int[num_food];
 			
 		//int[] total_amount_food_bought = new int[num_food];
 		
@@ -47,13 +45,15 @@ public class A1Jedi {
 			
 			int num_groceries = scan.nextInt(); // 
 			
+			int[] item = new int[num_food];
+			
 			for (int s = 0; s < num_groceries; s++) { // For loop, to find number of Items
 				
 				int customer = 1; // Place holder variable for one customer
 				
 				int num_item = scan.nextInt(); // Number of different groceries bought by customer
 				
-				String food_item = scan.next(); // Place holder for Name of Food bought
+			    String food_item = scan.next(); // Place holder for Name of Food bought
 				
 				for (int mjs = 0; mjs < num_food; mjs++) { //For loop to compare item and cost with item found previously
 					
@@ -61,15 +61,17 @@ public class A1Jedi {
 						
 						num_of_food[mjs] = num_of_food[mjs] + num_item; // Amount of time a certain food was bought equation
 						
-						num_customer_bought_item[mjs] = num_customer_bought_item[mjs] + customer; // Amount of customer bought an item equation
-				
+						item[mjs] = item[mjs] + 1;
+						
+						if (item[mjs] == 1) {
+						
+						num_customer_bought_item[mjs] = num_customer_bought_item[mjs] + 1; // Amount of customer bought an item equation
+						}}
+			
+						}
 					}
-					
-				}
 				
 			}
-		
-		}
 		
 		for (int m = 0; m < num_food; m++) {  // For loop to print out customer bought items
 			
