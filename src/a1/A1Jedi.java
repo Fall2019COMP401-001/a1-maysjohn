@@ -62,6 +62,7 @@ public class A1Jedi {
 						num_of_food[mjs] = num_of_food[mjs] + num_item; // Amount of time a certain food was bought equation
 						
 						num_customer_bought_item[mjs] = num_customer_bought_item[mjs] + customer; // Amount of customer bought an item equation
+				
 					}
 					
 				}
@@ -74,7 +75,7 @@ public class A1Jedi {
 			
 			if (num_of_food[m] == 0 ) { // If statement. Item equal zero. Print out not customer bought
 				
-				System.out.println("No customer bought " + food_name[m]); // Output no customer bought
+				System.out.println("No customers bought " + food_name[m]); // Output no customer bought
 				
 			}
 			else { // Else statement. If no item equal zero then the rest have a value
